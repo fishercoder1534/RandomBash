@@ -8,3 +8,6 @@ while IFS= read -r line
 do
   echo "$line"
 done < "$input"
+
+#below is the command to insert an empty line at the bottom of a file
+sed -i -e '$a\' $input
